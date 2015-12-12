@@ -1,4 +1,10 @@
 'use strict';
+/**
+ *
+ * start the net watcher json service
+ * then this client
+ * then touch target.txt
+ */
 const net = require('net'),
     client = net.connect({port: 5432});
 client.on('data', function (data) {
